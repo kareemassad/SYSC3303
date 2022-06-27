@@ -1,6 +1,7 @@
 import java.util.List;
 import java.util.Random;
 
+//Agent thread class using Runnable
 public class Agent implements Runnable {
 
     private String ingredient1, ingredient2, ingredient3;
@@ -8,6 +9,7 @@ public class Agent implements Runnable {
 
     public List<String> table;
 
+    // constructor
     public Agent(List<String> table, String ingredient1, String ingredient2, String ingredient3) {
         this.table = table;
         this.ingredient1 = ingredient1;
@@ -15,21 +17,33 @@ public class Agent implements Runnable {
         this.ingredient3 = ingredient3;
     }
 
+    // Not sure why we need to override but it doesn't work without it
+    @Override
     public void run() {
         while (true) {
+            // moved logic to seperate method so I could synchronize it. I feel like I did
+            // something wrong to get here.
+
+            placeIngredientsOnTable();
+        }
+
+    }
+
+    public synchronized void placeIngredientsOnTable() {
+        // while table is full
+        while (!table.isEmpty()) {
+            // wait till table is empty
+            try {
+                System.out.println("Table is not empty!");
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        while (table.size() != 2) {
             Random random = new Random();
             rand_number = random.nextInt(3);
-
-            // while table is full
-            while (!table.isEmpty()) {
-                // wait till table is empty
-                try {
-                    System.out.println("Table is not empty!");
-                    wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
 
             // rand_number will represent the missing ingredient
             // Bread = 0, Peanut = 1, Jam = 2
@@ -45,11 +59,8 @@ public class Agent implements Runnable {
                 System.out.println(Thread.currentThread().getName() + " is putting " + ingredient3 + " on the table!");
                 table.add(ingredient3);
             }
-            // System.out.println("Table still needs 1 more ingredient! The agent added " +
-            // table.get(0) + " and + "+ table.get(1) + "!");
-            notifyAll();
         }
-
+        notifyAll();
     }
 
 }

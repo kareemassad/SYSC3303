@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85b65098-9f13-445c-84d3-fe3e85f2c6ec" name="Changes" comment="" />
+    <list default="true" id="c830bad6-8c8f-4a0f-9f0b-b253788e4411" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Agent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kitchen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kitchen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="24Lex06NY9N6620VcH0X8DvSa8V" />
+  <component name="ProjectId" id="24O0glhzNIzf4sCwhEhJOjudjJd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,26 +27,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="15" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="85b65098-9f13-445c-84d3-fe3e85f2c6ec" name="Changes" comment="" />
-      <created>1643414536849</created>
+      <changelist id="c830bad6-8c8f-4a0f-9f0b-b253788e4411" name="Changes" comment="" />
+      <created>1643486441232</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1643414536849</updated>
+      <updated>1643486441232</updated>
     </task>
     <servers />
   </component>

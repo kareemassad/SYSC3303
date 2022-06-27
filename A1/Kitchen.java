@@ -7,16 +7,18 @@ public class Kitchen {
     // 1 agent thread
     // each chef has 1 ingredient
     // * agent randomly requests 1 ingredient (already has 2 other at random)
-    // chef fulfils request and consumes sandwich.
+    // chef fulfills request and consumes sandwich.
     // chef signals to agent that it is done.
     // agent repeats * instruction
 
     public static int sandwich_count;
 
+    // Method to increment total sandwich count (Assignment limit 20)
     public static void incrementSandwichCount() {
         sandwich_count++;
     }
 
+    // Method to get total sandwich count
     public static int getSandwichCount() {
         return sandwich_count;
     }
